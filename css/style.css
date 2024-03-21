@@ -61,7 +61,7 @@ button:hover{
 }
 
 div.welcome{
-    background-image: url('/img/doctor.jpg');
+    background-image: url('../img/doctor.jpg');
     width: 100%;
     height:100vh;
     color: rgb(255, 255, 255);
