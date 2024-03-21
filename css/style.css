@@ -81,7 +81,6 @@ button:hover{
     position: relative;
     overflow: hidden;
     font-size: 2em;
-    text-shadow: 0px 0px 10px rgb(109, 255, 133);
     font-weight: bold;
   }
 
@@ -94,6 +93,11 @@ button:hover{
     position: absolute;
     top: 50%;
     left: 100%;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     animation: moveBanner 30s linear infinite;
@@ -128,7 +132,11 @@ div.welcome h1:first-of-type{
     font-size: 3em;
     text-decoration: underline;
     text-decoration-color: rgb(221, 176, 108);
-    text-shadow: 5px 5px 10px red;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 div.welcome h1{
     color: rgb(140, 72, 146);
@@ -154,6 +162,11 @@ div.welcome button:first-of-type{
 div.welcome button:first-of-type:hover{
     background-color: rgb(71, 150, 68);
     color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 div.welcome button:last-of-type{
     border-radius: 10px;
@@ -167,27 +180,29 @@ div.welcome button:last-of-type{
 }
 div.welcome button:last-of-type:hover{
     background-color: #163825;
-}
-
-.body .features-container{
-
-}
-
-div[class|=feature]{
-    text-align: left;
-    font-size: x-small;
-    margin: 0;
-    padding: 0;
-}
-div[class|=feature] h3,p{
-    margin: 0;
-}
-.body h1{
-    margin: 10px auto;
-    width: fit-content;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 .body{
-    max-width: 70%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-}  
+}
+.features-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.feature-subcontainer{
+    text-align: left;
+    max-width: 30%;
+}
+div[class|=feature] h3,p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
