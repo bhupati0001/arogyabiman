@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    list-style: none;
+    display: none;
+}
+
+.body .features-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.feature{
+    flex: 1 200px;
+}
+.body h1{
+    margin: 10px auto;
+    width: fit-content;
+}
+.body{
+    max-width: 50%;
+    margin: 10px auto;
+}  
