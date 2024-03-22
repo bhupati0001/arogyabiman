@@ -2,6 +2,10 @@ body{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .header{
     background-color: black;
     margin: 0;
@@ -65,9 +69,9 @@ button:hover{
          1px  1px 0 #000;
 }
 .navbar .nav-links ul li:hover{
-    color: aquamarine;
+    color: rgb(4, 161, 4);
     cursor: pointer;
-    padding-bottom:5px ;
+    padding-bottom:10px ;
     border-bottom: 2px solid rgb(0, 97, 13);
 }
 
@@ -76,7 +80,7 @@ button:hover{
     height:3.5rem;
     padding:10px;
     background-color: transparent; 
-    color: rgb(129, 39, 39);
+    color: rgb(255, 43, 43);
     text-align: center;
     position: relative;
     top: 0;
@@ -108,11 +112,12 @@ button:hover{
    background-image: url('../img/doctor.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
 
 div.welcome{
     width: 100%;
-    height:150vh;
+    height:fit-content;
     color: rgb(255, 255, 255);
     text-shadow: 
         -1px -1px 0 #000,  
@@ -155,19 +160,15 @@ div.welcome button:first-of-type{
     margin: 10px;
     width: 10em;
     height: 4em;
-    color: rgb(21, 43, 104);
     font-weight: bold;
     background-color: whitesmoke;
     font-size: small;
 }
 div.welcome button:first-of-type:hover{
     background-color: rgb(71, 150, 68);
+}
+div.welcome button:first-of-type:hover a{
     color: white;
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
 }
 div.welcome button:last-of-type{
     border-radius: 10px;
@@ -189,6 +190,7 @@ div.welcome button:last-of-type:hover{
 }
 .body{
     width: 80%;
+    height: 100vh;
     margin: 0 auto;
     text-align: center;
 }
@@ -200,10 +202,21 @@ div.welcome button:last-of-type:hover{
 }
 .feature-subcontainer{
     text-align: left;
-    max-width: 30%;
+    min-width: 33%;
+    margin:0 1%;
 }
 div[class|=feature] h3,p{
-    margin-bottom: 0;
-    padding-bottom: 0;
-
+    margin: 0;
+}
+.feature-img-container{
+    max-width: 200px;
+}
+.feature-img-container{
+    min-width: 33%;
+    height: 60vh;
+    background-image: url('../img/feature-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
 }
